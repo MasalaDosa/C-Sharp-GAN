@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MatrixLib\MatrixLib.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Optimisers\" />
+    <Folder Include="Layers\" />
+    <Folder Include="Costs\" />
+    <Folder Include="Layers\Activations\" />
+  </ItemGroup>
+</Project>

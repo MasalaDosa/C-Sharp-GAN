@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGAN", "CSharpGAN\CSharpGAN.csproj", "{0B0EEB05-5161-458F-8E33-77EEABF5D736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNIST", "MNIST\MNIST.csproj", "{3EC089AE-CD0D-403C-9810-996BA5ABF001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetwork", "NeuralNetwork\NeuralNetwork.csproj", "{67482F56-541B-45E5-8AF2-7D7884E8AACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNISTClassifier", "MNISTClassifier\MNISTClassifier.csproj", "{9BB6973D-05AF-4ED9-A1AF-7DE6FEA6464B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{05F3803A-7D2D-4C92-ADB8-9AF9D2C0FDEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixLib", "MatrixLib\MatrixLib.csproj", "{D7CCB139-3093-4858-98E2-8CA18F65F7C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8C6F6A75-75D6-449D-B883-98FD6BC19FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixLib.Tests", "MatrixLib.Tests\MatrixLib.Tests.csproj", "{B4EA0054-349B-4F9B-9888-F75B20F31315}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C417CEA5-19B3-4728-B1A0-5C16A6951DB7}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+		example_after_5_epochs.png = example_after_5_epochs.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B0EEB05-5161-458F-8E33-77EEABF5D736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0EEB05-5161-458F-8E33-77EEABF5D736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0EEB05-5161-458F-8E33-77EEABF5D736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0EEB05-5161-458F-8E33-77EEABF5D736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC089AE-CD0D-403C-9810-996BA5ABF001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC089AE-CD0D-403C-9810-996BA5ABF001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC089AE-CD0D-403C-9810-996BA5ABF001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC089AE-CD0D-403C-9810-996BA5ABF001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67482F56-541B-45E5-8AF2-7D7884E8AACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67482F56-541B-45E5-8AF2-7D7884E8AACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67482F56-541B-45E5-8AF2-7D7884E8AACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67482F56-541B-45E5-8AF2-7D7884E8AACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB6973D-05AF-4ED9-A1AF-7DE6FEA6464B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB6973D-05AF-4ED9-A1AF-7DE6FEA6464B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB6973D-05AF-4ED9-A1AF-7DE6FEA6464B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB6973D-05AF-4ED9-A1AF-7DE6FEA6464B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F3803A-7D2D-4C92-ADB8-9AF9D2C0FDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F3803A-7D2D-4C92-ADB8-9AF9D2C0FDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F3803A-7D2D-4C92-ADB8-9AF9D2C0FDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F3803A-7D2D-4C92-ADB8-9AF9D2C0FDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CCB139-3093-4858-98E2-8CA18F65F7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CCB139-3093-4858-98E2-8CA18F65F7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CCB139-3093-4858-98E2-8CA18F65F7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CCB139-3093-4858-98E2-8CA18F65F7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EA0054-349B-4F9B-9888-F75B20F31315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EA0054-349B-4F9B-9888-F75B20F31315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EA0054-349B-4F9B-9888-F75B20F31315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EA0054-349B-4F9B-9888-F75B20F31315}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4EA0054-349B-4F9B-9888-F75B20F31315} = {8C6F6A75-75D6-449D-B883-98FD6BC19FAC}
+	EndGlobalSection
+EndGlobal
