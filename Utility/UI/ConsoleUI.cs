@@ -74,7 +74,7 @@ namespace Utility.UI
         public static IEnumerable<int> PromptForListOfIntegers(int min, int max)
         {
             WriteLine($"Please enter a comma separated list of integers from {min} to {max} inclusive:");
-            var line = Console.ReadLine();
+            var line = Console.ReadLine() ?? string.Empty;
             var items = line.Split(',', StringSplitOptions.RemoveEmptyEntries);
             foreach (var item in items)
             {
