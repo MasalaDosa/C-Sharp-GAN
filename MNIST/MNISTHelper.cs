@@ -36,7 +36,7 @@ namespace MNIST
         /// <returns></returns>
         public static (Matrix XTrain, Matrix yTrain) LoadTraining(double scaleMin = 0d, double scaleMax = 1d, int[]? filter = null)
         {
-            DownloadMNISTData().Wait();
+            DownloadMNISTData().GetAwaiter().GetResult();
             var data = MNISTLoad(MNISTTrainPath, scaleMin, scaleMax, filter);
             ConsoleUI.WriteLine($"XTrain: {data.XTrain}");
             ConsoleUI.WriteLine($"yTrain: {data.yTrain}");
@@ -53,7 +53,7 @@ namespace MNIST
         /// <returns></returns>
         public static (Matrix XTest, Matrix yTest) LoadTesting(double scaleMin = 0d, double scaleMax = 1d, int[]? filter = null)
         {
-            DownloadMNISTData().Wait();
+            DownloadMNISTData().GetAwaiter().GetResult();
             var data = MNISTLoad(MNISTTestPath, scaleMin, scaleMax, filter);
             ConsoleUI.WriteLine($"XTest: {data.XTrain}");
             ConsoleUI.WriteLine($"yTest: {data.yTrain}");
@@ -106,6 +106,7 @@ namespace MNIST
         {
             using (HttpClient client = new HttpClient())
             {
+                client.Timeout = TimeSpan.FromMinutes(10);
                 HttpResponseMessage response = await client.GetAsync(url);
 
                 // Check that response was successful or throw exception
